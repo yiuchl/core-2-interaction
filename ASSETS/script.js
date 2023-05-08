@@ -1,33 +1,3 @@
-// // Split
-// const draggable = document.querySelector('.draggable');
-// const leftPanel = document.querySelector('.left-panel');
-// const rightPanel = document.querySelector('.right-panel');
-
-// let isSliding = false;
-// let initialWidth;
-
-// draggable.addEventListener('mousedown', (event) => {
-//   isDragging = true;
-//   initialWidth = leftPanel.offsetWidth;
-// });
-
-// document.addEventListener('mousemove', (event) => {
-//   if (isSliding) {
-//     const currentWidth = initialWidth + event.clientX - draggable.offsetLeft;
-//     const containerWidth = leftPanel.offsetWidth + rightPanel.offsetWidth;
-//     const leftPanelWidth = (currentWidth / containerWidth) * 100;
-//     const rightPanelWidth = 100 - leftPanelWidth;
-
-//     leftPanel.style.width = `${leftPanelWidth}%`;
-//     rightPanel.style.width = `${rightPanelWidth}%`;
-//   }
-// });
-
-// document.addEventListener('mouseup', (event) => {
-//   isSliding = false;
-// });
-
-
 // draggableImage.js
 const moveableImage = document.querySelector('.moveable-image');
 let isDragging = false;
@@ -136,10 +106,12 @@ function dragElement(elmnt) {
     }
 }
 
-// COLOR RANDOMIZER BUTTON
+// Color randomizer (not currently working)
 let myColors = ['red', 'deeppink', 'orangered', 'orange', 'green', 'olivedrab', 'blue', 'darkviolet', 'mediumslateblue', 'rgb(33, 33, 33)'];
 
 $('button').click(function () {
     let randomColor = myColors[Math.trunc(Math.random() * myColors.length)];
     $('p').css('color', randomColor);
 });
+
+// Typeface of website changes on click (not currently working)
