@@ -115,3 +115,11 @@ $('button').click(function () {
 });
 
 // Typeface of website changes on click (not currently working)
+
+// Drawer
+let drawerButton = document.getElementsByClassName("drawer-buttom");
+
+// create drawer toggle function
+drawerButton.addEventListener("click", () => {
+    airtableItem.classList.toggle("is-open");
+});
